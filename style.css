@@ -1,0 +1,307 @@
+:root{
+  --text-gray: #7A8288; 
+  --text-primary: #494e52; 
+  --hover-underline: #5c6266;
+  --bg-primary: #FFFFFF;
+  --divider-primary: #F3F3F3;
+  --link-color: #0056b3;
+  --bg-secondary: #F7F7F7;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  appearance: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: var(--text-primary);
+}
+
+.a-special{
+  color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+a{
+  color: var(--link-color);
+  border-bottom: 1px solid var(--text-gray);
+}
+
+h1{
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 1.25rem;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+h5{
+  font-size: 0.875rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.p-big{
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.p-small{
+  font-size: 0.875rem;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+.mx-width{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.nav-wrapper{
+  border-bottom: 2px solid var(--divider-primary);
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .11);
+}
+
+.navbar{
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  color: var(--text-primary);
+}
+
+.logo-title{
+  text-align: center;
+  color: var(--text-gray);  
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 25%;
+  flex: 0 0 auto;
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  padding: 0 2rem;
+}
+
+.nav-links li{
+  transition: all 0.2s ease;
+}
+
+.nav-links li:hover{
+  color: var(--link-color);
+  transform: scale(1.1);
+}
+
+.flex-box{
+  display: flex;
+}
+
+.sidebar{
+  width: 25%;
+  padding: 1rem;
+  flex: 0 0 auto;
+}
+
+.author-avatar{
+  width: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.author-name{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2.125rem;
+}
+
+.follow-links-list{
+  margin-top: 1.5rem;
+}
+
+.follow-links{
+  margin-top: 0.625rem;
+  transition: all 0.2s ease;
+}
+
+.follow-links:hover{
+  transform: scale(1.1) translate(0.5rem);
+  color: var(--link-color);
+}
+
+.follow-links span{
+  margin-left: 1rem;
+}
+
+.main-content{
+  padding: 1rem 0;
+}
+
+.biography-section{
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+.p-content{
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.section{
+  padding: 2rem;
+}
+
+.publication-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.left-side{
+  width: 30%;
+  flex: 0 0 auto;
+  padding: 1rem;
+}
+
+.right-side{
+  padding: 1rem;
+}
+
+.publication-authors{
+  margin-top: 0.875rem;
+}
+
+.publication-content{
+  margin-top: 0.875rem;
+  text-align: justify;
+}
+
+.section-2-bg{
+  background: var(--bg-secondary);
+}
+
+.news-list{
+  margin-top: 1.25rem;
+}
+
+.news-list li{
+  list-style: disc;
+  margin-left: 1rem;
+  line-height: 1.5;
+}
+
+.research-interest{
+  margin-top: 1rem;
+}
+
+.publication-submission, .publication-submission a{
+  margin-top: 0.875rem;
+  color: red !important;
+}
+
+.text-uline{
+  border-bottom: 1px solid var(--text-gray);
+}
+
+.publication-source{
+  margin-top: 0.875rem;
+  color: var(--link-color);
+  font-style: italic;
+}
+
+footer p{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .flex-box{
+    flex-direction: column;
+  }
+
+  .sidebar{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .follow-links-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 0.5rem;
+    column-gap: 0;
+
+  }
+
+  .biography-section{
+    padding: 0.5rem;
+  }
+
+  .publication-wrapper{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .navbar{
+    flex-direction: column;
+  }
+
+  .logo-title{
+    width: fit-content;
+  }
+
+  .nav-links{
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  .section{
+    padding: 2rem 1rem;
+  }
+
+  .right-side{
+    padding: 1rem;
+  }
+
+  .section-heading{
+    padding-left: 1rem;
+  }
+
+  .left-side{
+    width: 30%;
+  }
+
+  
+}
