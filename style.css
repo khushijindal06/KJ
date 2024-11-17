@@ -260,7 +260,7 @@ footer p{
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 0.5rem;
-    column-gap: 0;
+    column-gap: 1rem;
 
   }
 
@@ -271,6 +271,11 @@ footer p{
   .publication-wrapper{
     flex-direction: column;
   }
+
+  .follow-links span{
+    margin-left: 0.25rem;
+  }
+  
 }
 
 @media screen and (max-width: 600px){
